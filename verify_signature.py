@@ -7,17 +7,17 @@ from cryptography.exceptions import InvalidSignature
 import base64
 import binascii
 
-# Ths code attempts to verify the signature of https://github.com/cose-wg/Examples/blob/master/ecdsa-examples/ecdsa-01.json.
+# Ths code attempts to verify the signature of https://github.com/cose-wg/Examples/blob/master/ecdsa-examples/ecdsa-sig-01.json.
 # Constants from that file -
 # The payload that is signed and needs to be verified -
-to_be_signed_hex = "85695369676E617475726543A1030043A101264054546869732069732074686520636F6E74656E742E"
+to_be_signed_hex = "846A5369676E61747572653145A2012603004054546869732069732074686520636F6E74656E742E"
 # The private key used to sign -
 d_base64url = "V8kgd2ZBRuh2dgyVINBUqpPDr7BOMGcF22CQMIUHtNM"
 # The public key components to verify the signature -
 x_base64url = "usWxHK2PmfnHKwXPS54m0kTcGJ90UiglWiGahtagnv8"
 y_base64url = "IBOL-C3BttVivg-lSreASjpkttcsz-1rb7btKLv8EX4"
 # The signature -
-signature_hex = "D71C05DB52C9CE7F1BF5AAC01334BBEACAC1D86A2303E6EEAA89266F45C01ED602CA649EAF790D8BC99D2458457CA6A872061940E7AFBE48E289DFAC146AE258"
+signature_hex = "6520BBAF2081D7E0ED0F95F76EB0733D667005F7467CEC4B87B9381A6BA1EDE8E00DF29F32A37230F39A842A54821FDD223092819D7728EFB9D3A0080B75380B"
 
 # Decodes a base64url string, by padding it first.
 def base64url_decode(b64url):

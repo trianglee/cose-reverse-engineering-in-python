@@ -6,7 +6,7 @@ from cryptography.hazmat.primitives.serialization import PublicFormat
 import base64
 import binascii
 
-# Ths code generates a PEM and DER keys from the public key in https://github.com/cose-wg/Examples/blob/master/ecdsa-examples/ecdsa-01.json.
+# Ths code generates a PEM and DER keys from the public key in https://github.com/cose-wg/Examples/blob/master/ecdsa-examples/ecdsa-sig-01.json.
 # Constants from that file -
 # The public key components -
 x_base64url = "usWxHK2PmfnHKwXPS54m0kTcGJ90UiglWiGahtagnv8"
